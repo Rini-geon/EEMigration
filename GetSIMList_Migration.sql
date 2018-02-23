@@ -18,7 +18,7 @@ BEGIN
 
 		SELECT  SIMID FROM tbl_sims ts
         JOIN tbl_locations tl ON ts.LocationID=tl.LocationID 
-        WHERE tl.EnterpriseID= @enterPriseID and ts.InternalStatusID=@internalStatusID
+        WHERE tl.EnterpriseID= @enterPriseID and ts.InternalStatusID=@internalStatusID and ts.SimTypeID=13
 	
 END  
 
